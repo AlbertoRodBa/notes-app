@@ -35,7 +35,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-center mt-4">Aplicación de Notas</h1>
+      <h2 className="text-center mt-4">App de Notas</h2>
+      <h5 className="text-center ">Organiza tus notas de manera fácil y rápida 📘✍️</h5>
+
 
       <NoteForm addNote={addNote} categories={categories} />
       <CategoryFilter categories={categories} setFilteredCategory={setFilteredCategory} />
