@@ -35,8 +35,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className="text-center mt-4">App de Notas</h2>
-      <h5 className="text-center ">Organiza tus notas de manera fácil y rápida 📘✍️</h5>
+      <h2 className="text-center mt-4">Notes App</h2>
+      <h5 className="text-center">Organiza tus tareas e ideas 📘✍️</h5>
 
 
       <NoteForm addNote={addNote} categories={categories} />

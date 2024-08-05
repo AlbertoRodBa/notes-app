@@ -2,7 +2,7 @@ import React from 'react';
 import { EditorState, convertFromRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import './styles.css'; // Asegúrate de importar el archivo CSS
+import './styles.css'; 
 
 function Note({ note, index, deleteNote }) {
   const contentState = convertFromRaw(JSON.parse(note.content));

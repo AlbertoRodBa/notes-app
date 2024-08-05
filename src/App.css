@@ -3,13 +3,13 @@
 }
 
 .demo-wrapper {
-  margin: 20px 0;
+  margin: 10px 0; /* Ajusta el margen para reducir el espacio */
 }
 
 .demo-editor {
   border: 1px solid #f1f1f1;
   padding: 10px;
-  min-height: 300px;
+  min-height: 150px; /* Ajusta la altura mínima del editor */
 }
 
 button {
