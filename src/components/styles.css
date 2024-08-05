@@ -1,0 +1,11 @@
+/* src/styles.css */
+.btn-custom {
+    background-color: #007bff; /* Azul claro */
+    border-color: #007bff;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+    border-color: #004085;
+  }
+  

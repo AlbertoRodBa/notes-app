@@ -25,7 +25,7 @@ function NoteForm({ addNote, categories }) {
             <div className="mb-3">
               <input
                 type="text"
-                placeholder="Title"
+                placeholder="Título"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 className="form-control"
@@ -47,7 +47,7 @@ function NoteForm({ addNote, categories }) {
                 editorClassName="demo-editor"
               />
             </div>
-            <button type="submit" className="btn btn-primary">Add Note</button>
+            <button type="submit" className="btn btn-primary">Agregar Nota</button>
           </form>
         </div>
       </div>

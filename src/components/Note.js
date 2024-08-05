@@ -2,6 +2,7 @@ import React from 'react';
 import { EditorState, convertFromRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import './styles.css'; // Asegúrate de importar el archivo CSS
 
 function Note({ note, index, deleteNote }) {
   const contentState = convertFromRaw(JSON.parse(note.content));
@@ -10,7 +11,7 @@ function Note({ note, index, deleteNote }) {
   return (
     <div className="note mt-4 p-3 border rounded shadow-sm bg-light">
       <h2 className="text-center">{note.title}</h2>
-      <h4>Category: {note.category}</h4>
+      <h4>Categoría: {note.category}</h4>
       <Editor
         editorState={editorState}
         toolbarHidden
@@ -18,7 +19,7 @@ function Note({ note, index, deleteNote }) {
         wrapperClassName="demo-wrapper"
         editorClassName="demo-editor"
       />
-      <button onClick={() => deleteNote(index)} className="btn btn-danger mt-2">Delete</button>
+      <button onClick={() => deleteNote(index)} className="btn btn-dark mt-2">Eliminar</button>
     </div>
   );
 }

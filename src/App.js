@@ -6,8 +6,8 @@ import './App.css';
 
 function App() {
   const [notes, setNotes] = useState([]);
-  const [categories, setCategories] = useState(['Work', 'Personal', 'Others']);
-  const [filteredCategory, setFilteredCategory] = useState('All');
+  const [categories, setCategories] = useState(['Trabajo', 'Personal', 'Otros']);
+  const [filteredCategory, setFilteredCategory] = useState('Todas');
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('notes'));
@@ -29,13 +29,13 @@ function App() {
     setNotes(newNotes);
   };
 
-  const filteredNotes = filteredCategory === 'All'
+  const filteredNotes = filteredCategory === 'Todas'
     ? notes
     : notes.filter(note => note.category === filteredCategory);
 
   return (
     <div className="App">
-      <h1 className="text-center mt-4">Notes App</h1>
+      <h1 className="text-center mt-4">Aplicación de Notas</h1>
 
       <NoteForm addNote={addNote} categories={categories} />
       <CategoryFilter categories={categories} setFilteredCategory={setFilteredCategory} />

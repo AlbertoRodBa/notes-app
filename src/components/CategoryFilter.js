@@ -6,7 +6,7 @@ function CategoryFilter({ categories, setFilteredCategory }) {
       <div className="row justify-content-center">
         <div className="col-md-8">
           <select onChange={(e) => setFilteredCategory(e.target.value)} className="form-select">
-            <option value="All">All</option>
+            <option value="Todas">Todas</option>
             {categories.map(cat => (
               <option key={cat} value={cat}>{cat}</option>
             ))}

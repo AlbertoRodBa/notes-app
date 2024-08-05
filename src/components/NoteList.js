@@ -11,7 +11,7 @@ function NoteList({ notes, deleteNote }) {
               <Note key={index} index={index} note={note} deleteNote={deleteNote} />
             ))
           ) : (
-            <p className="text-center">No notes available.</p>
+            <p className="text-center">No hay notas disponibles.</p>
           )}
         </div>
       </div>
